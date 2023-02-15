@@ -1,3 +1,9 @@
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
 .container {
     margin: 0 auto;
     width: 1100px;
@@ -15,6 +21,28 @@
   /* .navLink:last-child {
     margin-right: 0;
   } */
-  .navLink:hover {
-    color: rebeccapurple;
+  .item:hover  {
+    box-shadow: 0px 11px 23px 11px rgba(0,0,0,0.25);
+  }
+  .wrapper {
+    display: block;
+    overflow: hidden;
+    
+  }
+
+  .list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .item {
+    box-shadow: 0px 11px 23px 11px rgba(0,0,0,0.14);
+    max-width: 320px;
+  }
+  .infoWrapper {
+    padding: 20px;
+  }
+  .info {
+    list-style-type: none;
   }

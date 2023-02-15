@@ -1,0 +1,66 @@
+[
+    {
+        "id": "1",
+        "type": "Lux",
+        "title": "Lux for two",
+        "persons": 2,
+        "priceLow": 100,
+        "priceMiddle": 150,
+        "priceHigh": 300
+    },
+    {
+        "id": "2",
+        "type": "Family",
+        "title": "Family for three",
+        "persons": 3,
+        "priceLow": 50,
+        "priceMiddle": 100,
+        "priceHigh": 200
+    },
+    {
+        "id": "3",
+        "type": "Lux",
+        "title": "Lux for three",
+        "persons": 3,
+        "priceLow": 150,
+        "priceMiddle": 200,
+        "priceHigh": 400
+    },
+    {
+        "id": "4",
+        "type": "Family",
+        "title": "Family for four",
+        "persons": 4,
+        "priceLow": 60,
+        "priceMiddle": 120,
+        "priceHigh": 240
+    },
+    {
+        "id": "5",
+        "type": "Cottage",
+        "title": "Room in cottage",
+        "persons": 2,
+        "priceLow": 50,
+        "priceMiddle": 100,
+        "priceHigh": 200
+    },
+    {
+        "id": "6",
+        "type": "Family",
+        "title": "Family for three",
+        "persons": 3,
+        "priceLow": 50,
+        "priceMiddle": 100,
+        "priceHigh": 200
+    },
+    {
+        "id": "7",
+        "type": "Family",
+        "title": "Family for three",
+        "persons": 3,
+        "priceLow": 50,
+        "priceMiddle": 100,
+        "priceHigh": 200
+    }
+
+]

@@ -1,4 +1,4 @@
-.container {
+.thumb {
   margin: 0 auto;
   width: 1100px;
   display: flex;
@@ -7,7 +7,9 @@
   padding-bottom: 20px;
 }
 .header {
-  background: rgba(28, 54, 85, 0.2);
+  background:rgba(191, 217, 242, 1);
+  /* position: fixed; */
+  
 }
 .navLink {
   text-decoration: none;
@@ -21,4 +23,8 @@
 }
 .navLink:hover {
   color: black;
+}
+
+.wrapper {
+  flex: 1 0 auto;
 }

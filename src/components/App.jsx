@@ -13,9 +13,10 @@ const Rooms = lazy(() => import('./Rooms'));
 const Prices = lazy(() => import('./Prices'));
 const Map = lazy(() => import('./Map'));
 const Contacts = lazy(() => import('./Contacts'));
+
+
 export const App = () => {
   return (
-    
     
       <Routes>
         <Route path="/" element={<Navigation />}>

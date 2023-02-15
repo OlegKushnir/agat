@@ -1,35 +1,15 @@
-// import { UserMenu } from 'components/Navigation/UserMenu';
-// import { AuthNav } from 'components/Navigation/AuthNav';
+
 import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
-// import { useSelector } from 'react-redux';
-// import { getIsLoggedIn } from 'redux/store';
 import css from './Navigation.module.css';
-// import {Toolbar,Box,AppBar} from '@mui/material';
 import { NavLink } from 'react-router-dom';
+import Footer from './Footer';
 
 const Navigation = () => {
-  //   const isLoggedIn = useSelector(getIsLoggedIn)
   return (
-    // <>
-    // <Box sx={{ flexGrow: 1 }}>
-    //   <AppBar position="static">
-    //     <Toolbar>
-    //       {isLoggedIn ? <UserMenu />: <AuthNav/>}
-    //     </Toolbar>
-    //   </AppBar>
-    // </Box>
-
-    //   <div className={css.wrapper}>
-    //     <Suspense fallback={null}>
-    //       <Outlet />
-    //     </Suspense>
-    //     </div>
-
-    // </>
     <>
       <div className={css.header}>
-        <div className={css.container}>
+        <div className={css.thumb}>
           <NavLink to="rooms" className={css.navLink}>
             Rooms
           </NavLink>
@@ -44,11 +24,13 @@ const Navigation = () => {
           </NavLink>
         </div>
       </div>
-      <div className={css.wrapper}>
+      
+      <section title='content' className={css.wrapper}>
         <Suspense fallback={null}>
           <Outlet />
         </Suspense>
-      </div>
+      </section>
+      <Footer/>
     </>
   );
 };
