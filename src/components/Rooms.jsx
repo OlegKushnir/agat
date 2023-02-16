@@ -1,33 +1,33 @@
 import css from './Rooms.module.css';
 import { NavLink } from 'react-router-dom';
-import db from '../db/prices.json';
-import roomGal from '../db/gallery.json';
-import seasonDAtes from '../db/seasonDates.json';
+// import db from '../db/prices.json';
+import roomTypes from '../db/types.json';
+// import seasonDAtes from '../db/seasonDates.json';
 
 const Rooms = () => {
-  const roomImg = im => {
-    const found = roomGal.find(element => element.type === im);
-    console.log(found);
-    if (!found || found.images.length === 0) return 'beach.png'
-    return found.images[0];
-  };
-  const roomTypes = db.reduce((acc, room) => {
-          if (!acc.includes(room.type)) {
-            acc.push(room.type);
-            return acc;
-          }
-          return acc;
-        }, [])
-  console.log(roomTypes);
+  // const roomImg = im => {
+  //   const found = roomTypes.find(element => element.type === im);
+  //   console.log(found);
+  //   if (!found || found.images.length === 0) return 'beach.png'
+  //   return found.images[0];
+  // };
+  // const roomTypes = db.reduce((acc, room) => {
+  //         if (!acc.includes(room.type)) {
+  //           acc.push(room.type);
+  //           return acc;
+  //         }
+  //         return acc;
+  //       }, [])
+ 
   return (
     <div className={css.container}>
       <ul className={css.list}>
-        {roomGal.map(({ id, type, descr }) => (
+        {roomTypes.map(({ id, type, descr, images }) => (
           
           <li key={id} className={css.item}>
             <NavLink to="#" className={css.navLink}>
               <div className={css.wrapper}>
-                <img src={roomImg(type)} width="320px" height= "240px" alt={type}></img>
+                <img src={images[0]} width="320px" height= "240px" alt={type}></img>
               </div>
               <div className={css.infoWrapper}>
                 <p>{type}</p>
@@ -42,13 +42,6 @@ const Rooms = () => {
             </NavLink>
           </li>
         ))}
-        {/* {db.reduce((acc, room) => {
-          if (acc.includes(room.type)) {
-            acc.push(room.type);
-            return acc;
-          }
-          return [...acc];
-        }, [])} */}
          {
          
       }

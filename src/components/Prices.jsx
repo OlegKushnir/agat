@@ -1,9 +1,47 @@
 import css from './Prices.module.css';
 import prices from '../db/prices.json';
 import dates from '../db/seasonDates.json';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
+import Table from './PricesTable';
 
 const { priceLowBefore, priceLowAfter, priceMiddle, priceHigh } = dates;
+const roomTypes = prices.reduce((acc, room) => {
+  const { type, title, persons, priceLow, priceMiddle, priceHigh } = room;
+  if (Object.keys(acc).includes(room.type)) {
+    acc[type].push({ title, persons, priceLow, priceMiddle, priceHigh });
+
+    return acc;
+  }
+
+  return {
+    ...acc,
+    [type]: [{ title, persons, priceLow, priceMiddle, priceHigh }],
+  };
+}, {});
+// const getPrices = roomType => {
+//   roomType.map(room => (
+//     <tbody key={room.id}>
+//       <tr className={css.type}>
+//         <td>{room.type}</td>
+//         <td></td>
+//         <td></td>
+//         <td></td>
+//         <td></td>
+//       </tr>
+//       <tr>
+//         <td>
+//           <NavLink to="#" className={css.link}>
+//             {room.title} {room.persons}-х місний
+//           </NavLink>
+//         </td>
+//         <td>{room.priceLow}</td>
+//         <td>{room.priceMiddle}</td>
+//         <td>{room.priceHigh}</td>
+//         <td>{room.priceLow}</td>
+//       </tr>
+//     </tbody>
+//   ));
+// };
 
 const Prices = () => {
   return (
@@ -16,55 +54,15 @@ const Prices = () => {
         передоплати. Натисніть на тип номера для виведення додаткової інформації
         та фото.
       </div>
-      <table>
-        <thead>
-          <tr>
-            <td>
-              <b>Тип номера</b>
-            </td>
-            <td>
-              <b>Ціна</b>
-              {priceLowBefore}
-            </td>
-            <td>
-              <b>Ціна</b>
-              {priceMiddle}
-            </td>
-            <td>
-              <b>Ціна</b> {priceHigh}
-            </td>
-            <td>
-              <b>Ціна</b>
-              {priceLowAfter}
-            </td>
-          </tr>
-        </thead>
 
-        {prices.map(
-          ({ id, title, type, persons, priceLow, priceMiddle, priceHigh }) => (
-            <tbody key={id}>
-              <tr className={css.type}>
-                <td>{type}</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>
-                  <NavLink to="#" className={css.link}>
-                    {title} {persons}-х місний
-                  </NavLink>
-                </td>
-                <td>{priceLow}</td>
-                <td>{priceMiddle}</td>
-                <td>{priceHigh}</td>
-                <td>{priceLow}</td>
-              </tr>
-            </tbody>
-          )
-        )}
-      </table>
+      {Object.keys(roomTypes).map(rType => (
+        // console.log(roomTypes[rType])
+        roomTypes[rType].map(room => {
+          // console.log(room);
+          <Table room={room} />
+        })
+        
+      ))}
     </div>
   );
 };
