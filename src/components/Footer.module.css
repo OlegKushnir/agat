@@ -1,9 +1,73 @@
+
 .wrapper {
-    background-color: #bfd9f2;
+    background-color: #2f303a;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 .container {
+  display: flex;
+  justify-content: space-between;
     width: 1100px;
     margin: 0 auto;
-    background-color: #bfd9f2;
+   padding-left: 10px;
+   padding-right: 10px;
   }
+  .booking {
+    font-size: 16px;
+    color: var(--white);
+  }
+  .contacts {
+    color: var(--white);
+    transition: color 250ms var(--cubik);
+  }
+  .contacts:hover {
+    color: var(--accent-color) ;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    /* @media screen and (min-width: 1200px) {
+      margin-top: 16px;
+    } */
+  }
+  .social__item {
+    margin-right: 10px;
+  }
+  .social__item:last-child {
+    margin-right: 0;
+  }
+  .social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color:var(--white);
+    fill: var(--accent-color);
+    outline: none;
+    transition: fill 250ms var(--cubik), 
+    background-color 250ms var(--cubik);
+  }
+    .social__link:hover,
+    .social__link:focus,
+    .social__link:active {
+    background-color:var(--accent-color);
+    fill: var(--white);
+    /* animation: rotateSocial 1s cubic-bezier(0.4, 0, 0.2, 1) forwards 3s  ; */
+   }
+   /* @keyframes rotateSocial {
+    0% {
+      transform: perspective(400px) rotateY(0deg);
+   }
+    100% {
+      transform: perspective(400px) rotateY(360deg);
+  }
+  } */
+  .copiright {
+    margin-top: 25px;
+    text-align: center;
+    color: var(--white);
+  }
+  
 

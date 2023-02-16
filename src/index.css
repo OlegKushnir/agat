@@ -1,5 +1,9 @@
 @import-normalize; /* bring in normalize.css styles */
-
+:root {
+  --accent-color:rgb(255, 149, 0);
+  --white: white;
+  --cubik: cubic-bezier(0.4, 0, 0.2, 1);
+}
 html,body {
   height: 100%;
 }
@@ -19,4 +23,19 @@ code {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+ul{
+  list-style-type: none;
+}
+ul,
+li,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
 }

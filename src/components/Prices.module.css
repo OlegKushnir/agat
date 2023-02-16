@@ -7,10 +7,22 @@
   .text {
     margin-bottom: 20px;
   }
+  .tableGeneral {
+    width:100%;
+  }
   .type {
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  .priceTitle {
+    min-width: 200px;
+    vertical-align: top;
     background-color: #bfd9f2;
-    border: 0;
+  }
+  .priceInfo:hover {
+    background-color: #bfd9f2;
   }
   .link {
-    text-decoration: none;
+    color: black;
   }
+ 
