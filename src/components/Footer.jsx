@@ -18,28 +18,28 @@ const Footer = () => {
 
         <ul class={css.social}>
           <li class={css.social__item}>
-            <a href="#" class={css.social__link} title="">
+            <a href="/rooms" class={css.social__link} title="">
               <svg class="icon" width="20" height="20">
                 <use href="icons.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li class={css.social__item}>
-            <a href="#" class={css.social__link} title="">
+            <a href="/rooms" class={css.social__link} title="">
               <svg class="icon" width="25" height="25">
                 <use href="icons.svg#telegram"></use>
               </svg>
             </a>
           </li>
           <li class={css.social__item}>
-            <a href="#" class={css.social__link} title="">
+            <a href="/rooms" class={css.social__link} title="">
               <svg class="icon" width="30" height="30">
                 <use href="icons.svg#whatsapp"></use>
               </svg>
             </a>
           </li>
           <li class={css.social__item}>
-            <a href="#" class={css.social__link} title="">
+            <a href="/rooms" class={css.social__link} title="">
               <svg class="icon" width="27" height="27">
                 <use href="icons.svg#viber"></use>
               </svg>
