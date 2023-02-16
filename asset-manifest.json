@@ -1,13 +1,33 @@
 {
   "files": {
-    "main.css": "/agat/static/css/main.7acaea2f.css",
-    "main.js": "/agat/static/js/main.07d3183d.js",
+    "main.css": "/agat/static/css/main.5ca430b1.css",
+    "main.js": "/agat/static/js/main.c430e33f.js",
+    "static/css/378.7a592ea9.chunk.css": "/agat/static/css/378.7a592ea9.chunk.css",
+    "static/js/378.2641a13c.chunk.js": "/agat/static/js/378.2641a13c.chunk.js",
+    "static/css/276.7a592ea9.chunk.css": "/agat/static/css/276.7a592ea9.chunk.css",
+    "static/js/276.05bf825b.chunk.js": "/agat/static/js/276.05bf825b.chunk.js",
+    "static/css/134.180cf4da.chunk.css": "/agat/static/css/134.180cf4da.chunk.css",
+    "static/js/134.8d7f18d5.chunk.js": "/agat/static/js/134.8d7f18d5.chunk.js",
+    "static/css/226.3589634c.chunk.css": "/agat/static/css/226.3589634c.chunk.css",
+    "static/js/226.6f3428fd.chunk.js": "/agat/static/js/226.6f3428fd.chunk.js",
+    "static/js/318.26efa671.chunk.js": "/agat/static/js/318.26efa671.chunk.js",
+    "static/js/361.0538537a.chunk.js": "/agat/static/js/361.0538537a.chunk.js",
     "index.html": "/agat/index.html",
-    "main.7acaea2f.css.map": "/agat/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/agat/static/js/main.07d3183d.js.map"
+    "main.5ca430b1.css.map": "/agat/static/css/main.5ca430b1.css.map",
+    "main.c430e33f.js.map": "/agat/static/js/main.c430e33f.js.map",
+    "378.7a592ea9.chunk.css.map": "/agat/static/css/378.7a592ea9.chunk.css.map",
+    "378.2641a13c.chunk.js.map": "/agat/static/js/378.2641a13c.chunk.js.map",
+    "276.7a592ea9.chunk.css.map": "/agat/static/css/276.7a592ea9.chunk.css.map",
+    "276.05bf825b.chunk.js.map": "/agat/static/js/276.05bf825b.chunk.js.map",
+    "134.180cf4da.chunk.css.map": "/agat/static/css/134.180cf4da.chunk.css.map",
+    "134.8d7f18d5.chunk.js.map": "/agat/static/js/134.8d7f18d5.chunk.js.map",
+    "226.3589634c.chunk.css.map": "/agat/static/css/226.3589634c.chunk.css.map",
+    "226.6f3428fd.chunk.js.map": "/agat/static/js/226.6f3428fd.chunk.js.map",
+    "318.26efa671.chunk.js.map": "/agat/static/js/318.26efa671.chunk.js.map",
+    "361.0538537a.chunk.js.map": "/agat/static/js/361.0538537a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.5ca430b1.css",
+    "static/js/main.c430e33f.js"
   ]
 }
