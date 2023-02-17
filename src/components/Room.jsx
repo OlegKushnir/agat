@@ -1,8 +1,7 @@
 import { useParams } from 'react-router-dom';
 import css from './Room.module.css';
-// import { NavLink } from 'react-router-dom';
+import parent from './Rooms.module.css';
 import prices from '../db/prices.json';
-// import seasonDAtes from '../db/seasonDates.json';
 import roomTypes from '../db/types.json';
 import Table from './PricesTable';
 
@@ -26,23 +25,28 @@ const Room = () => {
 
   return (
     <div className={css.container}>
-      <Table roomType={type} rooms={roomTable} />
-      <p>Комплектація номера:</p>
-      <ul>
-        {filling.map(el => (
-          <li key={el}>- {el}</li>
-        ))}
-      </ul>
-      {images.map(roomImg => (
-        <div key={roomImg} className={css.wrapper}>
-          <img
-            src={`../../${roomImg}`}
-            width="320px"
-            height="240px"
-            alt={room.title}
-          ></img>
+      <div className={css.thumb}>
+        <Table roomType={type} rooms={roomTable} />
         </div>
-      ))}
+        <p className={parent.title}> Комплектація номера:</p>
+        <ul className={css.filling}>
+          {filling.map(el => (
+            <li className={parent.text} key={el}>
+              - {el}
+            </li>
+          ))}
+        </ul>
+        {images.map(roomImg => (
+          <div key={roomImg} className={css.wrapper}>
+            <img
+              src={`../../${roomImg}`}
+              width="320px"
+              height="240px"
+              alt={room.title}
+            ></img>
+          </div>
+        ))}
+      
     </div>
   );
 };

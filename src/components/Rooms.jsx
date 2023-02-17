@@ -22,13 +22,12 @@ const Rooms = () => {
                   <img src={`../${images[0]}`} width="320px" height= "240px" alt={title}></img>
                 </div>
                 <div className={css.infoWrapper}>
-                  <p>{title}</p>
-                  <p>{persons}-х містний</p>
+                  <p className={css.title} >{title} <span className={css.persons}>{persons}-х містний</span> </p>
                   <ul className={css.info}>
-                    <li>{seasonDAtes.priceLowBefore} : {priceLow} грн</li>
-                    <li>{seasonDAtes.priceMiddle} : {priceMiddle} грн</li>
-                    <li>{seasonDAtes.priceHigh} : {priceHigh} грн</li>
-                    <li>{seasonDAtes.priceLowAfter} : {priceLow} грн</li>
+                    <li className={css.text}>{seasonDAtes.priceLowBefore} : {priceLow} грн</li>
+                    <li className={css.text}>{seasonDAtes.priceMiddle} : {priceMiddle} грн</li>
+                    <li className={css.text}>{seasonDAtes.priceHigh} : {priceHigh} грн</li>
+                    <li className={css.text}>{seasonDAtes.priceLowAfter} : {priceLow} грн</li>
                   </ul>
                 </div>
               </NavLink>

@@ -1,7 +1,7 @@
 
 .container {
     margin: 0 auto;
-    width: 1100px;
+    width: var(--desctop);
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
@@ -12,12 +12,6 @@
     font-weight: 500;
     font-size: 18px;
     color: black;
-  }
-  /* .navLink:last-child {
-    margin-right: 0;
-  } */
-  .item:hover  {
-    box-shadow: 0px 11px 23px 11px rgba(0,0,0,0.25);
   }
   .wrapper {
     display: block;
@@ -36,9 +30,23 @@
     max-width: 320px;
     transition: box-shadow 500ms var(--cubik);
   }
+  .item:hover  {
+    box-shadow: 0px 11px 23px 11px rgba(0,0,0,0.25);
+  }
   .infoWrapper {
     padding: 20px;
   }
-  .info {
-    list-style-type: none;
+  
+  .title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .persons {
+    font-size: 16px;
+    font-weight: 200;
   }

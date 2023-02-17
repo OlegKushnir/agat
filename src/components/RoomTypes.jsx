@@ -28,8 +28,8 @@ const RoomTypes = () => {
                 <img src={images[0]} width="320px" height= "240px" alt={type}></img>
               </div>
               <div className={css.infoWrapper}>
-                <p>{type}</p>
-                <p>{descr}</p>
+                <h3 className={css.title}>{type}</h3>
+                <p className={css.text}>{descr}</p>
               </div>
             </NavLink>
           </li>

@@ -1,0 +1,20 @@
+.container {
+    width: var(--desctop);
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 768px;
+    background: url(/public/hero.jpg) no-repeat bottom center;
+}
+.logo{
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    color: var(--white);
+  }

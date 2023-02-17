@@ -1,15 +1,30 @@
-.thumb {
+.header {
+  background:var(--marine);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--desctop);
   margin: 0 auto;
-  width: 1100px;
+}
+.thumb {
   display: flex;
   justify-content: flex-end;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.header {
-  background:rgba(191, 217, 242, 1);
-  /* position: fixed; */
-  
+
+.logo{
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  color: var(--white);
+
 }
 .navLink {
   text-decoration: none;
@@ -26,6 +41,7 @@
   color:var(--accent-color);
 }
 
-.wrapper {
+.content {
   flex: 1 0 auto;
+  margin-top: 60px;
 }
