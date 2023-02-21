@@ -56,7 +56,25 @@
 }
 .imgWrapper {
   width: 100%;
+  height:fit-content;
+  overflow: hidden;
 }
+
+.roomImg {
+  transition: transform 500ms;
+}
+.item:hover .roomImg {
+  transform: scale(110%);
+}
+
+.item {
+  box-shadow: 0px 11px 23px 11px rgba(0,0,0,0.14);
+  max-width: 320px;
+  transition: box-shadow 500ms;
+}
+.item:hover  {
+  box-shadow: 0px 11px 23px 11px rgba(0,0,0,0.25);
+} 
 
 .tableGeneral {
   width: 100%;
@@ -71,4 +89,10 @@
 
 .filling {
   margin-bottom: 20px;
+}
+
+.map {
+  width: 100%;
+  height: 100vh;
+  border: 0;
 }

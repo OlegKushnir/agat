@@ -8,7 +8,7 @@ const Home = () => {
       <section className={app.hero}>
         <h1 className={app.hero__title}>б.в. Енергетик</h1>
       </section>
-      <div className={app.homeContent}>
+      <div className={app.container}>
       <RoomTypes />
       <Map />
       </div>

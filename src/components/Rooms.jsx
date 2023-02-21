@@ -16,10 +16,11 @@ const Rooms = () => {
       <ul className={css.list}>
         {rooms.map(
           ({ id, title, persons, priceLow, priceMiddle, priceHigh }) => (
-            <li key={id} className={css.item}>
+            <li key={id} className={app.item}>
               <NavLink to={id} className={css.navLink}>
                 <div className={app.imgWrapper}>
                   <img
+                    className={app.roomImg}
                     src={`../${images[0]}`}
                     width="320px"
                     height="240px"
