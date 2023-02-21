@@ -13,7 +13,7 @@ const Rooms = () => {
 
   return (
     <div className={app.wrapper}>
-      <ul className={css.list}>
+      <ul className={app.list}>
         {rooms.map(
           ({ id, title, persons, priceLow, priceMiddle, priceHigh }) => (
             <li key={id} className={app.item}>
@@ -29,7 +29,7 @@ const Rooms = () => {
                 </div>
                 <div className={app.infoWrapper}>
                   <h3 className={app.title}>
-                    {title}{' '}
+                    {title}
                     <span className={app.thinText}> {persons}-х містний</span>
                   </h3>
                   <ul className={css.prices}>

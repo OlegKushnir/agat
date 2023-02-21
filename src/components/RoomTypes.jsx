@@ -6,7 +6,7 @@ import roomTypes from '../db/types.json';
 const RoomTypes = () => {
   return (
     <div className={app.wrapper}>
-      <ul className={css.list}>
+      <ul className={app.list}>
         {roomTypes.map(({ id, type, descr, images }) => (
           <li key={id} className={app.item}>
             <NavLink to={`/rooms/${type}`} className={css.navLink}>

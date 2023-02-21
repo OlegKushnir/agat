@@ -1,11 +1,19 @@
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import app from './App.module.css';
 import css from './Rooms.module.css';
 import prices from '../db/prices.json';
 import roomTypes from '../db/types.json';
 import Table from './PricesTable';
+// import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
+import CoolLightbox from './Gallery';
+
+
 
 const Room = () => {
+  const [roomImage, updateImage] = useState('');
+  const [openedLightBox, updateLightBox] = useState(false);
+
   const { roomId } = useParams();
   const room = prices.find(room => room.id === roomId);
   const {
@@ -23,6 +31,11 @@ const Room = () => {
   };
   const { images } = roomTypes.find(el => el.type === room.type);
 
+  useEffect(() => {
+    if(roomImage) updateLightBox(true);
+  
+  }, [roomImage]);
+
   return (
     <div className={app.wrapper}>
       <div className={css.thumb}>
@@ -36,20 +49,39 @@ const Room = () => {
           </li>
         ))}
       </ul>
-      <ul className={css.list}>
-        {images.map(roomImg => (
-          <li key={roomImg}>
-            <div className={app.imgWrapper}>
-              <img
-                src={`../../${roomImg}`}
-                width="320px"
-                height="240px"
-                alt={room.title}
-              ></img>
-            </div>
-          </li>
-        ))}
+
+      <ul className={app.list}>
+            {images.map(roomImg => (
+              <li  key={roomImg}>
+                <div >
+                  <img
+                    className={app.roomImg}
+                    onClick={()=>updateImage(roomImg)}
+                    src={`../../${roomImg}`}
+                    width="320px"
+                    height="240px"
+                    alt={room.title}
+                  ></img>
+                </div>
+              </li>
+            ))}
       </ul>
+      {/* <ResponsiveMasonry
+                columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
+            >
+                <Masonry>
+                    {images.map((image, i) => (
+                        <img
+                            key={i}
+                            onClick={()=>updateImage(image)}
+                            src={`../../${image}`}
+                            style={{width: "100%", display: "block"}}
+                            alt=""
+                        />
+                    ))}
+                </Masonry>
+            </ResponsiveMasonry> */}
+    {openedLightBox ? <CoolLightbox links={images} currentImage={roomImage} updateLightBox= {updateLightBox}/> : ''}
     </div>
   );
 };
