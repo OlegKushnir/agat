@@ -2,6 +2,7 @@
 :root {
   --accent-color:rgb(255, 149, 0);
   --white: white;
+  --darkText: black;
   --marine: rgba(191, 217, 242, 1);
   --marineLogo:rgba(191, 217, 242, .75)
   --cubik: cubic-bezier(0.4, 0, 0.2, 1);

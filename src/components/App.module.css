@@ -1,20 +1,74 @@
-.container {
-    width: var(--desctop);
-    margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-.hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 768px;
-    background: url(/public/hero.jpg) no-repeat bottom center;
+.content {
+  flex: 1 0 auto;
+  margin-top: 60px;
 }
-.logo{
-    text-align: center;
-    font-size: 100px;
-    font-family: 'Pacifico', cursive;
-    font-weight: 400;
-    color: var(--white);
-  }
+.container {
+  width: var(--desctop);
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.content .container {
+  min-height: 100vh;
+}
+.wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hero {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 768px;
+  background: url(/public/hero.jpg) no-repeat bottom center;
+}
+.hero__title {
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 400;
+}
+.thinText {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.infoWrapper {
+  padding: 20px;
+}
+.imgWrapper {
+  width: 100%;
+}
+
+.tableGeneral {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.tableTitle {
+  min-width: 200px;
+  vertical-align: top;
+  background-color: var(--marine);
+  font-weight: 500;
+}
+
+.filling {
+  margin-bottom: 20px;
+}

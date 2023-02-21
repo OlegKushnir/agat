@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
-import css from './Room.module.css';
-import parent from './Rooms.module.css';
+import app from './App.module.css';
+import css from './Rooms.module.css';
 import prices from '../db/prices.json';
 import roomTypes from '../db/types.json';
 import Table from './PricesTable';
@@ -24,29 +24,32 @@ const Room = () => {
   const { images } = roomTypes.find(el => el.type === room.type);
 
   return (
-    <div className={css.container}>
+    <div className={app.wrapper}>
       <div className={css.thumb}>
         <Table roomType={type} rooms={roomTable} />
-        </div>
-        <p className={parent.title}> Комплектація номера:</p>
-        <ul className={css.filling}>
-          {filling.map(el => (
-            <li className={parent.text} key={el}>
-              - {el}
-            </li>
-          ))}
-        </ul>
-        {images.map(roomImg => (
-          <div key={roomImg} className={css.wrapper}>
-            <img
-              src={`../../${roomImg}`}
-              width="320px"
-              height="240px"
-              alt={room.title}
-            ></img>
-          </div>
+      </div>
+      <p className={app.title}> Комплектація номера:</p>
+      <ul className={app.filling}>
+        {filling.map(el => (
+          <li className={app.text} key={el}>
+            - {el}
+          </li>
         ))}
-      
+      </ul>
+      <ul className={css.list}>
+        {images.map(roomImg => (
+          <li key={roomImg}>
+            <div className={app.imgWrapper}>
+              <img
+                src={`../../${roomImg}`}
+                width="320px"
+                height="240px"
+                alt={room.title}
+              ></img>
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

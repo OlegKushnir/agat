@@ -14,7 +14,6 @@ export const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Navigation />}>
-        
         <Route path="/rooms" element={<RoomTypes />} />
         <Route path="/rooms/:roomType" element={<Rooms />} />
         <Route path="/rooms/:roomType/:roomId" element={<Room />} />

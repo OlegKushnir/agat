@@ -1,29 +1,5 @@
-.container {
-    margin: 0 auto;
-    width: var(--desctop);
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .text {
-    margin-bottom: 20px;
-    font-size: 16px;
-    font-weight: 400;
-  }
+
   .textImp {
-    font-weight: 500;
-  }
-  .tableGeneral {
-    width:100%;
-    margin-bottom: 10px;
-  }
-  .type {
-    font-size: 18px;
-    font-weight: 500;
-  }
-  .priceTitle {
-    min-width: 200px;
-    vertical-align: top;
-    background-color:var(--marine);
     font-weight: 500;
   }
   
@@ -31,6 +7,6 @@
     background-color: var(--marine);
   }
   .link {
-    color: black;
+    color: var(--darkText);
   }
  

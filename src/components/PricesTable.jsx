@@ -1,31 +1,32 @@
 import dates from '../db/seasonDates.json';
 import { NavLink } from 'react-router-dom';
+import app from './App.module.css';
 import css from './Prices.module.css';
 
 const { priceLowBefore, priceLowAfter, priceMiddle, priceHigh } = dates;
 
 const Table = ({ roomType, rooms }) => {
   return (
-    <table className={css.tableGeneral}>
-      <caption className={css.type}>{roomType}</caption>
+    <table className={app.tableGeneral}>
+      <caption className={app.title}>{roomType}</caption>
       <thead>
         <tr>
-          <td className={css.priceTitle}>
+          <td className={app.tableTitle}>
             Тип номера
           </td>
-          <td className={css.priceTitle}>
+          <td className={app.tableTitle}>
             Ціна
             <p>{priceLowBefore}</p>
           </td>
-          <td className={css.priceTitle}>
+          <td className={app.tableTitle}>
             Ціна
             <p>{priceMiddle}</p>
           </td>
-          <td className={css.priceTitle}>
+          <td className={app.tableTitle}>
             Ціна
             <p>{priceHigh}</p>
           </td>
-          <td className={css.priceTitle}>
+          <td className={app.tableTitle}>
             Ціна
             <p>{priceLowAfter}</p>
           </td>

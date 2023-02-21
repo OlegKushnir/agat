@@ -1,15 +1,18 @@
 import RoomTypes from './RoomTypes';
 import Map from './Map';
-import css from './App.module.css';
+import app from './App.module.css';
 
 const Home = () => {
-  return (
+  return (  
     <>
-      <section className={css.hero}>
-        <h1 className={css.logo}>б.в. Енергетик</h1>
+      <section className={app.hero}>
+        <h1 className={app.hero__title}>б.в. Енергетик</h1>
       </section>
+      <div className={app.homeContent}>
       <RoomTypes />
       <Map />
+      </div>
+      
     </>
   );
 };

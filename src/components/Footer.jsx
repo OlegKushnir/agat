@@ -1,15 +1,18 @@
-import css from './Footer.module.css';
+ import css from './Footer.module.css';
+ import app from './App.module.css';
+
 
 const Footer = () => {
   return (
     <section className={css.footer}>
-      <div className={css.container}>
-        <ul>
-          <li className={css.logo}>
-            <h2>б.в. Енергетик</h2>
+      <div className={app.container}>
+      <div className={css.wrapper}>
+        <ul >
+          <li className={css.logoItem}>
+            <h2 className={app.logo}>б.в. Енергетик</h2>
           </li>
 
-          <li>
+          <li className={css.item}>
             <h3 className={css.booking}>
               Бронювання номерів, додаткова інформація:
             </h3>
@@ -37,7 +40,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={css.social__link}
-                  title=""
+                  title="instagram"
                 >
                   <svg className="icon" width="20" height="20">
                     <use href="icons.svg#instagram"></use>
@@ -50,7 +53,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={css.social__link}
-                  title=""
+                  title="telegram"
                 >
                   <svg className="icon" width="25" height="25">
                     <use href="icons.svg#telegram"></use>
@@ -63,7 +66,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={css.social__link}
-                  title=""
+                  title="WhatsApp"
                 >
                   <svg className="icon" width="30" height="30">
                     <use href="icons.svg#whatsapp"></use>
@@ -76,7 +79,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={css.social__link}
-                  title=""
+                  title="Viber"
                 >
                   <svg className="icon" width="27" height="27">
                     <use href="icons.svg#viber"></use>
@@ -93,6 +96,7 @@ const Footer = () => {
           title="googleMap"
           loading="lazy"
         ></iframe>
+        </div>
       </div>
       <div className={css.copiright}>
         <p> ТОВ "АГАТ" База відпочинку "Енергетик"</p>
