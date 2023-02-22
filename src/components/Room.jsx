@@ -33,7 +33,6 @@ const Room = () => {
 
   useEffect(() => {
     if(roomImage) updateLightBox(true);
-  
   }, [roomImage]);
 
   return (

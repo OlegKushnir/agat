@@ -44,7 +44,22 @@ const Contacts = () => {
               </a>
               <div>
                 <h2 className={app.title}>Написати нам</h2>
-                <p className={app.text}>Роботи</p>
+                <p className={app.text}>agat.turism@gmail.com</p>
+              </div>
+            </li>
+            <li className={app.contacts__item}>
+              <a
+                href="tel:+380682840591"
+                className={app.contacts__link}
+                title="phone"
+              >
+                <svg className="icon" width="30" height="30">
+                  <use href="icons.svg#phone-form"></use>
+                </svg>
+              </a>
+              <div>
+                <h2 className={app.title}>Забронювати номер</h2>
+                <p className={app.text}>(+38) 068 284 05 91</p>
               </div>
             </li>
           </ul>
