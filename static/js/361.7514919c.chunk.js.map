@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/361.7514919c.chunk.js","mappings":"2JAOE,UAPe,WAEb,OAEE,uBAEH,C","sources":["components/Contacts.jsx"],"sourcesContent":["const Contacts = () => {\n\n    return (\n \n      <></>\n    );\n  };\n  export default Contacts;"],"names":[],"sourceRoot":""}
