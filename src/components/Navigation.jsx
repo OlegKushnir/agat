@@ -10,38 +10,43 @@ const Navigation = () => {
   const {pathname} = useLocation();
   return (
     <>
-      <section className={css.header}>
+      <header>
         <div className={app.container}>
           <div className={css.wrapper}>
             <NavLink to="/" className={css.navLink}>
-              <h2 className={`${app.logo} ${css.logo}`}>б.в. Енергетик</h2>
+              <span className={app.logo}>Енергетик</span>
             </NavLink>
 
             <ul className={css.thumb}>
+            <li className={css.item}>
+                <NavLink to="/" className={css.navLink}>
+                  Головна
+                </NavLink>
+              </li>
               <li className={css.item}>
                 <NavLink to="rooms" className={css.navLink}>
-                  Rooms
+                  Номери
                 </NavLink>
               </li>
               <li className={css.item}>
                 <NavLink to="prices" className={css.navLink}>
-                  Prices
+                  Ціни
                 </NavLink>
               </li>
               <li className={css.item}>
                 <NavLink to="map" className={css.navLink}>
-                  Map
+                  Розташування
                 </NavLink>
               </li>
               <li className={css.item}>
                 <NavLink to="contacts" className={css.navLink}>
-                  Contacts
+                  Контакти
                 </NavLink>
               </li>
             </ul>
           </div>
         </div>
-      </section>
+      </header>
       <section className={app.content}>
         <div className={pathname === '/' ? "" : app.container}>
           <Suspense fallback={null}>

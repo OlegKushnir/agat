@@ -4,12 +4,12 @@
 
 const Footer = () => {
   return (
-    <section className={css.footer}>
+    <footer className={css.footer}>
       <div className={app.container}>
       <div className={css.wrapper}>
         <ul className={css.contactsList}>
           <li className={css.logoItem}>
-            <h2 className={app.logo}>б.в. Енергетик</h2>
+            <span className={app.logo}>Енергетик</span>
           </li>
 
           <li className={css.item}>
@@ -102,7 +102,7 @@ const Footer = () => {
         <p> ТОВ "АГАТ" База відпочинку "Енергетик"</p>
         <p>Всі права захищені. &#169;</p>
       </div>
-    </section>
+    </footer>
   );
 };
 export default Footer;

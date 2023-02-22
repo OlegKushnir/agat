@@ -1,4 +1,4 @@
-.footer {
+footer {
   background-color: #2f303a;
 }
 .wrapper {
@@ -11,11 +11,8 @@
   margin-bottom: 20px;
 }
 
-.logoItem h2 {
-  color: var(--marine);
-}
-
 .booking {
+  text-align: center;
   font-size: 16px;
   font-weight: 500;
   color: var(--white);
@@ -34,9 +31,6 @@
   display: flex;
   justify-content: flex-start;
   margin-top: 25px;
-  /* @media screen and (min-width: 1200px) {
-      margin-top: 16px;
-    } */
 }
 .social__item {
   margin-right: 10px;
@@ -79,6 +73,9 @@
 
 @media screen and (min-width: 768px) {
 
+  .booking {
+    text-align: start;
+  }
   .wrapper {
     display: flex;
     justify-content: space-between;
