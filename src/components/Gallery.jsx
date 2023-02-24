@@ -14,7 +14,7 @@ const CoolLightbox = ({ links, currentImage, updateLightBox }) => {
   const [currentImageIndex, setCurrentIndex] = useState(
     links.indexOf(currentImage)
   );
-    console.log('currentImageIndex', currentImageIndex);
+    
   const gotoPrevious = () =>
     currentImageIndex > 0 && setCurrentIndex(currentImageIndex - 1);
 
@@ -44,15 +44,15 @@ const CoolLightbox = ({ links, currentImage, updateLightBox }) => {
       onClose={()=>updateLightBox(false)}
 
       /* Use single or double click to zoom */
-      // singleClickToZoom
+      singleClickToZoom
 
       /* react-spring config for open/close animation */
-      //   pageTransitionConfig={{
-      //     from: { transform: "scale(0.75)", opacity: 0 },
-      //     enter: { transform: "scale(1)", opacity: 1 },
-      //     leave: { transform: "scale(0.75)", opacity: 0 },
-      //     config: { mass: 1, tension: 320, friction: 32 }
-      //   }}
+        pageTransitionConfig={{
+          from: { transform: "scale(0.75)", opacity: 0 },
+          enter: { transform: "scale(1)", opacity: 1 },
+          leave: { transform: "scale(0.75)", opacity: 0 },
+          config: { mass: 1, tension: 320, friction: 32 }
+        }}
     />
   );
 };

@@ -5,7 +5,6 @@ import css from './Rooms.module.css';
 import prices from '../db/prices.json';
 import roomTypes from '../db/types.json';
 import Table from './PricesTable';
-// import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 import CoolLightbox from './Gallery';
 
 
@@ -57,29 +56,15 @@ const Room = () => {
                     className={app.roomImg}
                     onClick={()=>updateImage(roomImg)}
                     src={`../../${roomImg}`}
-                    width="320px"
-                    height="240px"
+                    width="320"
+                    height="240"
                     alt={room.title}
                   ></img>
                 </div>
               </li>
             ))}
       </ul>
-      {/* <ResponsiveMasonry
-                columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
-            >
-                <Masonry>
-                    {images.map((image, i) => (
-                        <img
-                            key={i}
-                            onClick={()=>updateImage(image)}
-                            src={`../../${image}`}
-                            style={{width: "100%", display: "block"}}
-                            alt=""
-                        />
-                    ))}
-                </Masonry>
-            </ResponsiveMasonry> */}
+    
     {openedLightBox ? <CoolLightbox links={images} currentImage={roomImage} updateLightBox= {updateLightBox}/> : ''}
     </div>
   );

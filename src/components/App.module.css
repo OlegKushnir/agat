@@ -3,13 +3,12 @@
   margin-top: 49px;
 }
 .container {
-  /* width: 100%; */
   margin: 0 auto;
   padding-left: 5px;
   padding-right: 5px;
 }
 .content .container {
-  min-height: 100vh;
+  min-height: calc(100vh - 49px);
 }
 .wrapper {
   padding-top: 20px;
@@ -17,21 +16,27 @@
 }
 
 .hero {
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 768px;
+  height: calc(100vh - 49px);
   background: url(/public/hero.jpg) no-repeat bottom center;
 }
+
 .hero__title {
   text-align: center;
   font-size: 50px;
   font-family: 'Pacifico', cursive;
   font-weight: 400;
   color: var(--white);
+  opacity: 0;
+  transition: all 2s var(--cubik);
+}
+.hero__title.show {
+  opacity: 1;
 }
 .hero__sublogo {
+  display: block;
   text-align: end;
   font-size: 14px;
   font-family: 'Raleway', sans-serif;
@@ -96,6 +101,7 @@ footer .logo {
   gap: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
+  overflow: hidden;
 }
 
 .item:hover .roomImg {
@@ -105,7 +111,14 @@ footer .logo {
 .item {
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
   max-width: 320px;
-  transition: box-shadow 500ms var(--cubik);
+  transform: translateX(100%);
+  transition: box-shadow 500ms var(--cubik), transform 1s var(--cubik),
+    opacity 1s var(--cubik);
+  opacity: 0;
+}
+.item.show {
+  transform: translateX(0);
+  opacity: 1;
 }
 .item:hover {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
@@ -128,7 +141,7 @@ footer .logo {
 .map {
   width: 100%;
   height: calc(100vh - 60px);
-  border: 0;
+  border: 0;;
 }
 
 .gal {
@@ -164,7 +177,7 @@ footer .logo {
 .contacts__item:last-child {
   border-bottom: none;
 }
-.contacts__item .text{
+.contacts__item .text {
   width: 240px;
   font-size: 14px;
 }
@@ -199,6 +212,9 @@ footer .logo {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .hero {
+    height: calc(100vh - 60px);
+  }
 
   .hero__title {
     font-size: 100px;
@@ -211,9 +227,13 @@ footer .logo {
   .content {
     margin-top: 60px;
   }
+  .content .container {
+    min-height: calc(100vh - 60px);
+  }
 
   .contacts__wrapper {
     flex-direction: row;
+    gap: 30px;
   }
   .contacts__link {
     width: 50px;
@@ -256,7 +276,7 @@ footer .logo {
   .contacts .text {
     max-width: 500px;
   }
-  .contacts__item .text{
+  .contacts__item .text {
     width: 100%;
     font-size: 16px;
   }
