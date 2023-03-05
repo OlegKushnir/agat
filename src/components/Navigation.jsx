@@ -22,7 +22,7 @@ const Navigation = () => {
         </li>
         <li className={css.item}>
           <NavLink to="/map" className={css.navLink}>
-            Розташування
+            Карта
           </NavLink>
         </li>
         <li className={css.item}>

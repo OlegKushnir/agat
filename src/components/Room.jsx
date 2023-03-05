@@ -4,6 +4,7 @@ import app from './App.module.css';
 import css from './Rooms.module.css';
 import prices from '../db/prices.json';
 import roomTypes from '../db/types.json';
+import fillingArr from '../db/filling.json';
 import Table from './PricesTable';
 import CoolLightbox from './Gallery';
 
@@ -26,52 +27,11 @@ const Room = () => {
   const roomTable = {
     [type]: [{ id, title, persons, priceLow, priceMiddle, priceHigh }],
   };
-  const { images } = roomTypes.find(el => el.type === room.type);
+  const { images, descr } = roomTypes.find(el => el.type === room.type);
 
-  const fillingIcon = str => {
-    switch (str) {
-      case 'двоспальне ліжко':
-        return (
-          "../../icons.svg#bed3"
-        );
-      case 'диван':
-        return (
-          "../../icons.svg#sofa"
-        );
-
-      case 'душ':
-        return (
-          "../../icons.svg#bath"
-        );
-
-      case 'туалет':
-        return (
-          "../../icons.svg#toilet"
-        );
-
-      case 'кондиціонер':
-        return (
-          "../../icons.svg#ac"
-        );
-
-      case 'WiFi':
-        return (
-          "../../icons.svg#wifi"
-        );
-
-      case 'телевізор':
-        return (
-          "../../icons.svg#tv"
-        );
-      case 'холодильник':
-        return (
-          "../../icons.svg#fridge"
-        );
-
-      default:
-        break;
-    }
-  };
+  const fillingFull = filling.map(id => {
+    return fillingArr.find(el => el.id === id);
+  });
 
   const handleClick = roomImg => {
     updateImage(roomImg);
@@ -83,20 +43,19 @@ const Room = () => {
       <div className={css.thumb}>
         <Table roomType={type} rooms={roomTable} />
       </div>
+      <div className={css.thumb}>
+        <p className={app.text}>{descr}</p>
+      </div>
+
+      <p className={app.title}> Комплектація номера:</p>
       <ul className={app.filling}>
-        {filling.map(el => (
-          <>
-            {fillingIcon(el) ? (
-              <li key={el} className={app.filling__item}>
-                <svg className={app.icon} width="27" height="27">
-                  <use href={fillingIcon(el)}></use>
-                </svg>
-                 {el}
-              </li>
-            ) : (
-              ''
-            )}
-          </>
+        {fillingFull.map(({ id, title, iconURL }) => (
+          <li key={id} className={app.filling__item}>
+            <svg className={app.icon} width="20" height="20">
+              <use href={`../${iconURL}`}></use>
+            </svg>
+            {title}
+          </li>
         ))}
       </ul>
 

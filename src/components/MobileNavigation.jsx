@@ -23,7 +23,7 @@ const MobileNavigation = ({mobileHidden, updateMobileHidden}) => {
         </li>
         <li className={css.mobile__item}>
           <NavLink to="/map" className={css.navLink} onClick={() => updateMobileHidden(!mobileHidden)}>
-            Розташування
+            Карта
           </NavLink>
         </li>
         <li className={css.mobile__item}>

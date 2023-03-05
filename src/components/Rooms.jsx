@@ -5,38 +5,17 @@ import { NavLink } from 'react-router-dom';
 import prices from '../db/prices.json';
 import seasonDAtes from '../db/seasonDates.json';
 import roomTypes from '../db/types.json';
+import fillingArr from '../db/filling.json';
+
 
 const Rooms = () => {
   const { roomType } = useParams();
   const rooms = prices.filter(room => room.type === roomType);
   const { images } = roomTypes.find(room => room.type === roomType);
-  const fillingIcon = str => {
-    switch (str) {
-      case 'двоспальне ліжко':
-        return '../icons.svg#bed3';
-      case 'диван':
-        return '../icons.svg#sofa';
 
-      case 'душ':
-        return '../icons.svg#bath';
-
-      case 'туалет':
-        return '../icons.svg#toilet';
-
-      case 'кондиціонер':
-        return '../icons.svg#ac';
-
-      case 'WiFi':
-        return '../icons.svg#wifi';
-
-      case 'телевізор':
-        return '../icons.svg#tv';
-      case 'холодильник':
-        return '../icons.svg#fridge';
-
-      default:
-        break;
-    }
+  const fillingIcon = (id) => {
+      const res = fillingArr.find(el => el.id === id);
+      return res?.iconURL;
   };
 
   return (
@@ -84,17 +63,11 @@ const Rooms = () => {
                   </ul>
                   <ul className={app.filling}>
                     {filling.map(el => (
-                      <>
-                        {fillingIcon(el) ? (
                           <li key={el} className={app.filling__item}>
                             <svg className={app.icon} width="27" height="27">
                               <use href={fillingIcon(el)}></use>
                             </svg>
                           </li>
-                        ) : (
-                          ''
-                        )}
-                      </>
                     ))}
                   </ul>
                 </div>

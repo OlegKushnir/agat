@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "title": "двоспальне ліжко",
+        "iconURL": "../icons.svg#bed3"
+    },{
+        "id": 2,
+        "title": "душ",
+        "iconURL": "../icons.svg#bath"
+    },{
+        "id": 3,
+        "title": "туалет",
+        "iconURL": "../icons.svg#toilet"
+    },{
+        "id": 4,
+        "title": "телевізор",
+        "iconURL": "../icons.svg#tv"
+    },{
+        "id": 5,
+        "title": "холодильник",
+        "iconURL": "../icons.svg#fridge"
+    },{
+        "id": 6,
+        "title": "кондиціонер",
+        "iconURL": "../icons.svg#ac"
+    },{
+        "id": 7,
+        "title": "WiFi",
+        "iconURL": "../icons.svg#wifi"
+    },{
+        "id": 8,
+        "title": "диван",
+        "iconURL": "../icons.svg#sofa"
+    }
+]
