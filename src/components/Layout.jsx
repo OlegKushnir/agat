@@ -44,7 +44,7 @@ const Layout = () => {
           </div>
         </div>
       </header>
-      <section className={app.content}>
+      <section className={app.content} aria-label="content">
         <div className={pathname === '/' ? '' : app.container}>
           <Suspense fallback={null}>
             <Outlet />

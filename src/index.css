@@ -11,12 +11,14 @@
 }
 html,body {
   height: 100%;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 code {
@@ -36,10 +38,12 @@ p,
 h1,
 h2,
 h3 {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 a{
+  box-sizing: border-box;
   text-decoration: none;
 }
 

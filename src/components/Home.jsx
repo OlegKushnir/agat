@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <>
-      <section className={app.hero}>
+      <div className={app.hero} aria-label="hero">
         <h2
           className={
             !inView ? app.hero__title : `${app.hero__title} ${app.show}`
@@ -19,7 +19,7 @@ const Home = () => {
         >
           Енергетик<span className={app.hero__sublogo}>база відпочинку</span>
         </h2>
-      </section>
+      </div>
       <div className={app.container}>
         <RoomTypes />
         <Map />

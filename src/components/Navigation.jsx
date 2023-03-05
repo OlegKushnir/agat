@@ -3,8 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   return (
-    <>
-      
+    
       <ul className={css.thumb}>
         <li className={css.item}>
           <NavLink to="/" className={css.navLink}>
@@ -32,7 +31,7 @@ const Navigation = () => {
           </NavLink>
         </li>
       </ul>
-    </>
+    
   );
 };
 export default Navigation;
