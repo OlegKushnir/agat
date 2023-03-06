@@ -23,11 +23,12 @@ const Room = () => {
     priceMiddle,
     priceHigh,
     filling,
+    images
   } = room;
   const roomTable = {
     [type]: [{ id, title, persons, priceLow, priceMiddle, priceHigh }],
   };
-  const { images, descr } = roomTypes.find(el => el.type === room.type);
+  const { descr } = roomTypes.find(el => el.type === room.type);
 
   const fillingFull = filling.map(id => {
     return fillingArr.find(el => el.id === id);
@@ -48,30 +49,30 @@ const Room = () => {
       </div>
 
       <p className={app.title}> Комплектація номера:</p>
-      <ul className={app.filling}>
-        {fillingFull.map(({ id, title, iconURL }) => (
-          <li key={id} className={app.filling__item}>
-            <svg className={app.icon} width="20" height="20">
-              <use href={`../${iconURL}`}></use>
-            </svg>
-            {title}
-          </li>
-        ))}
-      </ul>
+      <div className={css.thumb}>
+        <ul className={app.filling}>
+          {fillingFull.map(({ id, title, iconURL }) => (
+            <li key={id} className={app.filling__item}>
+              <svg className={app.icon} width="20" height="20">
+                <use href={`../${iconURL}`}></use>
+              </svg>
+              {title}
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <ul className={app.list}>
-        {images.map(roomImg => (
-          <li key={roomImg}>
-            <div>
+        {images?.map(roomImg => (
+          <li key={roomImg} className={app.gal__item}>
               <img
                 className={app.roomImg}
                 onClick={() => handleClick(roomImg)}
-                src={`../../${roomImg}`}
-                width="320"
-                height="240"
+                src={`../../${roomImg?.split('.')[0]}_480.jpg`}
+                width="300"
+                height="220"
                 alt={room.title}
               ></img>
-            </div>
           </li>
         ))}
       </ul>

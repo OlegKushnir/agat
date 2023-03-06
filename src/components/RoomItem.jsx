@@ -3,7 +3,7 @@ import css from './Rooms.module.css';
 import { NavLink } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
 
-const RoomItem = ({ id, type, descr, images }) => {
+const RoomItem = ({ type, descr, image }) => {
 
   const { ref, inView } = useInView({
     threshold: 0,
@@ -15,7 +15,7 @@ const RoomItem = ({ id, type, descr, images }) => {
         <div className={app.imgWrapper}>
           <img
             className={app.roomImg}
-            src={`/agat/${images[0]}`}
+            src={`/agat/${image?.split('.')[0]}_480.jpg`}
             width="320"
             height="240"
             alt={type}

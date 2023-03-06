@@ -8,19 +8,22 @@ const RoomTypes = () => {
     return `${res[0]}...`
   }
   return (
-    <div className={app.wrapper}>
+    <section className={app.wrapper}>
+      <h2 className={app.section__title}>Наші номери</h2>
+      <div className={app.wrapper}>
       <ul className={app.list}>
-        {roomTypes.map(({ id, type, descr, images }) => (
+        {roomTypes.map(({ id, type, descr, image }) => (
           <RoomItem
             key={id}
-            id={id}
             type={type}
             descr={shortDescr(descr)}
-            images={images}
+            image={image}
           />
         ))}
       </ul>
-    </div>
+      </div>
+      
+    </section>
   );
 };
 export default RoomTypes;
