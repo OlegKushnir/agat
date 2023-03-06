@@ -1,6 +1,7 @@
 .content {
   flex: 1 0 auto;
-  margin-top: 49px;
+  /* margin-top: 49px; */
+  padding-top: 49px;
 }
 .container {
   margin: 0 auto;
@@ -284,7 +285,8 @@ footer .logo {
   }
 
   .content {
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    padding-top: 60px;
   }
   .content .container {
     min-height: calc(100vh - 60px);

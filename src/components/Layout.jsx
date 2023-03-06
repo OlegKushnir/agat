@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from 'react-router-dom';
-import { Suspense } from 'react';
+import { useLayoutEffect, Suspense } from 'react';
 import app from './App.module.css';
 import css from './Navigation.module.css';
 import { NavLink } from 'react-router-dom';
@@ -12,6 +12,10 @@ import { useState } from 'react';
 const Layout = () => {
   const { pathname } = useLocation();
   const [mobileHidden, updateMobileHidden] = useState(true);
+
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [pathname]);
   
   return (
     <>

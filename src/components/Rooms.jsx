@@ -11,13 +11,12 @@ const Rooms = () => {
   const rooms = prices.filter(room => room.type === roomType);
 
   const fillingIcon = id => {
-    const res = fillingArr.find(el => el.id === id);
-    return res?.iconURL;
+    return fillingArr.find(el => el.id === id);
   };
 
   return (
     <section className={app.wrapper}>
-      <h2 className={app.section__title}>{roomType}</h2>
+      <h2  className={app.section__title}>{roomType}</h2>
       <div className={app.wrapper}>
         <ul className={app.list}>
           {rooms.map(
@@ -49,7 +48,7 @@ const Rooms = () => {
                   <div className={app.infoWrapper}>
                     <h3 className={app.title}>
                       {title}
-                      <p className={app.thinText}> {persons} - містний</p>
+                      <p className={app.thinText}> {persons} - місний</p>
                     </h3>
                     <ul className={css.prices}>
                       <li className={app.text}>
@@ -68,9 +67,9 @@ const Rooms = () => {
 
                     <ul className={app.filling}>
                       {filling.map(el => (
-                        <li key={el} className={app.filling__item}>
-                          <svg className={app.icon} width="27" height="27">
-                            <use href={fillingIcon(el)}></use>
+                        <li key={el} className={app.filling__item} title={fillingIcon(el).title}>
+                          <svg className={app.icon} width="27" height="27" >
+                            <use href={fillingIcon(el).iconURL}></use>
                           </svg>
                         </li>
                       ))}
