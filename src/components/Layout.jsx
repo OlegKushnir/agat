@@ -34,7 +34,7 @@ const Layout = () => {
               onClick={() => updateMobileHidden(!mobileHidden)}
             >
               <svg width="40" height="40">
-                <use href="../%PUBLIC_URL%/icons.svg#menu_40px"></use>
+                <use href="icons.svg#menu_40px"></use>
               </svg>
             </button>
             {mobileHidden ? (
