@@ -1,6 +1,6 @@
-import RoomTypes from './RoomTypes';
-import Map from './Map';
-import app from './App.module.css';
+import RoomTypes from '../Rooms/RoomTypes';
+import Map from '../Map/Map';
+import app from '../App.module.css';
 import { useInView } from 'react-intersection-observer';
 
 const Home = () => {

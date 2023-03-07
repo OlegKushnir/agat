@@ -1,11 +1,11 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import { useLayoutEffect, Suspense } from 'react';
 import app from './App.module.css';
-import css from './Navigation.module.css';
+import css from './Navigation/Navigation.module.css';
 import { NavLink } from 'react-router-dom';
-import Footer from './Footer';
-import Navigation from './Navigation';
-import MobileNavigation from './MobileNavigation';
+import Footer from './Footer/Footer';
+import Navigation from './Navigation/Navigation';
+import MobileNavigation from './Navigation/MobileNavigation';
 
 import { useState } from 'react';
 
@@ -16,7 +16,7 @@ const Layout = () => {
   useLayoutEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [pathname]);
-  
+
   return (
     <>
       <header>
@@ -33,18 +33,21 @@ const Layout = () => {
               className={css.menu__button}
               onClick={() => updateMobileHidden(!mobileHidden)}
             >
-              <svg width="40" height="40">
-                <use href="icons.svg#menu_40px"></use>
-              </svg>
+              {mobileHidden ? (
+                <svg width="40" height="40">
+                  <use href="icons.svg#menu_40px"></use>
+                </svg>
+              ) : (
+                <svg width="35" height="35">
+                  <use href="icons.svg#close-black"></use>
+                </svg>
+              )}
             </button>
-            {mobileHidden ? (
-              <Navigation />
-            ) : (
+            <Navigation />
               <MobileNavigation
                 mobileHidden={mobileHidden}
                 updateMobileHidden={updateMobileHidden}
               />
-            )}
           </div>
         </div>
       </header>

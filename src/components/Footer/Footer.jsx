@@ -1,5 +1,5 @@
  import css from './Footer.module.css';
- import app from './App.module.css';
+ import app from '../App.module.css';
 
 
 const Footer = () => {

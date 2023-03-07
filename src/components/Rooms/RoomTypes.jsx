@@ -1,11 +1,11 @@
-import app from './App.module.css';
-import roomTypes from '../db/types.json';
-import RoomItem from './RoomItem';
+import app from '../App.module.css';
+import roomTypes from '../../db/types.json';
+import RoomType from './RoomType.jsx';
 
 const RoomTypes = () => {
   const shortDescr = (descr)=>{
     const res = descr.split('.')
-    return `${res[0]}...`
+    return `${res[0]}.`
   }
   return (
     <section className={app.wrapper}>
@@ -13,7 +13,7 @@ const RoomTypes = () => {
       <div className={app.wrapper}>
       <ul className={app.list}>
         {roomTypes.map(({ id, type, descr, image }) => (
-          <RoomItem
+          <RoomType
             key={id}
             type={type}
             descr={shortDescr(descr)}

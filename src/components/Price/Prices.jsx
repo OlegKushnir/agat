@@ -1,6 +1,6 @@
-import app from './App.module.css';
+import app from '../App.module.css';
 import css from './Prices.module.css';
-import prices from '../db/prices.json';
+import prices from '../../db/prices.json';
 import Table from './PricesTable';
 
 const roomTypes = prices.reduce((acc, room) => {

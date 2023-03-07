@@ -1,6 +1,6 @@
-import dates from '../db/seasonDates.json';
+import dates from '../../db/seasonDates.json';
 import { NavLink } from 'react-router-dom';
-import app from './App.module.css';
+import app from '../App.module.css';
 import css from './Prices.module.css';
 
 const { priceLowBefore, priceLowAfter, priceMiddle, priceHigh } = dates;

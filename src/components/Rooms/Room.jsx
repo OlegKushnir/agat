@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import app from './App.module.css';
+import app from '../App.module.css';
 import css from './Rooms.module.css';
-import prices from '../db/prices.json';
-import roomTypes from '../db/types.json';
-import fillingArr from '../db/filling.json';
-import Table from './PricesTable';
-import CoolLightbox from './Gallery';
+import prices from '../../db/prices.json';
+import roomTypes from '../../db/types.json';
+import fillingArr from '../../db/filling.json';
+import Table from '../Price/PricesTable';
+import CoolLightbox from '../Gallery/Gallery';
 
 const Room = () => {
   const [roomImage, updateImage] = useState('');

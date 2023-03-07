@@ -1,9 +1,9 @@
-import app from './App.module.css';
+import app from '../App.module.css';
 import css from './Rooms.module.css';
 import { NavLink } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
 
-const RoomItem = ({ type, descr, image }) => {
+const RoomType = ({ type, descr, image }) => {
 
   const { ref, inView } = useInView({
     threshold: 0,
@@ -31,4 +31,4 @@ const RoomItem = ({ type, descr, image }) => {
     </li>
   );
 };
-export default RoomItem;
+export default RoomType;

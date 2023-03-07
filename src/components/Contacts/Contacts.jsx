@@ -1,4 +1,4 @@
-import app from './App.module.css';
+import app from '../App.module.css';
 import { NavLink } from 'react-router-dom';
 
 const Contacts = () => {

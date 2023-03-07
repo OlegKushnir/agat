@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Lightbox from 'react-spring-lightbox';
-import app from './App.module.css';
+import app from '../App.module.css';
 
 const CoolLightbox = ({ links, currentImage, handleClick }) => {
   const images = [];
