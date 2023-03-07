@@ -5,7 +5,9 @@
     margin-top: 16px;
     margin-bottom: 16px;
   }
-  
+  .priceInfo {
+    border-bottom: 1px solid var(--marine);
+  }
   .priceInfo:hover {
     background-color: var(--marine);
   }

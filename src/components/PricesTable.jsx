@@ -50,7 +50,7 @@ const Table = ({ roomType, rooms }) => {
                 to={`/rooms/${roomType}/${room.id}`}
                 className={css.link}
               >
-                {room.title} {room.persons} - місний
+                {room.title} <p> {room.persons}-місний</p>
               </NavLink>
             </td>
             <td className={currentPrice(priceLowBefore) ? css.current : ''}>{room.priceLow}</td>
