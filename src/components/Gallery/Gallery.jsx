@@ -31,9 +31,6 @@ const CoolLightbox = ({ links, currentImage, handleClick }) => {
       onNext={gotoNext}
       images={images}
       currentIndex={currentImageIndex}
-      /* Add your own UI */
-      // renderHeader={() => (<CustomHeader />)}
-      // renderFooter={() => (<CustomFooter />)}
       renderPrevButton={() =>
         currentImageIndex !== 0 ? (
           <div className={app.gal__btn__wrapper}>
@@ -66,24 +63,9 @@ const CoolLightbox = ({ links, currentImage, handleClick }) => {
           ''
         )
       }
-      // renderImageOverlay={() => (<ImageOverlayComponent >)}
-
-      /* Add styling */
       className={app.gal}
-      // style={{ background: "grey" }}
-
-      /* Handle closing */
       onClose={() => handleClick('')}
-      /* Use single or double click to zoom */
       singleClickToZoom
-
-      /* react-spring config for open/close animation */
-      // pageTransitionConfig={{
-      //   from: { transform: "scale(0.75)", opacity: 0 },
-      //   enter: { transform: "scale(1)", opacity: 1 },
-      //   leave: { transform: "scale(0.75)", opacity: 0 },
-      //   config: { mass: 1, tension: 320, friction: 32 }
-      // }}
     />
   );
 };
