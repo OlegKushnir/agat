@@ -1,10 +1,10 @@
-
 import app from '../App.module.css';
 import css from './Rooms.module.css';
 import { useInView } from 'react-intersection-observer';
 import { NavLink } from 'react-router-dom';
 import seasonDAtes from '../../db/seasonDates.json';
 import fillingArr from '../../db/filling.json';
+import PropTypes from 'prop-types';
 
 const RoomCard = ({
   id,
@@ -16,7 +16,7 @@ const RoomCard = ({
   filling,
   images,
 }) => {
-const { ref, inView } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0,
   });
   const fillingIcon = id => {
@@ -74,3 +74,14 @@ const { ref, inView } = useInView({
   );
 };
 export default RoomCard;
+
+RoomCard.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  persons: PropTypes.number.isRequired,
+  priceHigh: PropTypes.number.isRequired,
+  priceLow: PropTypes.number.isRequired,
+  priceMiddle: PropTypes.number.isRequired,
+  filling: PropTypes.arrayOf(PropTypes.number).isRequired,
+  images:PropTypes.arrayOf(PropTypes.string).isRequired,
+};

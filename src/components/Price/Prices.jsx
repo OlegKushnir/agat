@@ -39,8 +39,8 @@ const Prices = () => {
       </p>
       
         {Object.keys(roomTypes).map(rType => (
-          <div className={app.wrapper}>
-          <Table key={rType} roomType={rType} rooms={roomTypes} />
+          <div  key={rType} className={app.wrapper}>
+          <Table roomType={rType} rooms={roomTypes} />
           </div>
         ))}
       

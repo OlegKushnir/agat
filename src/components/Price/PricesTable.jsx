@@ -2,6 +2,7 @@ import dates from '../../db/seasonDates.json';
 import { NavLink } from 'react-router-dom';
 import app from '../App.module.css';
 import css from './Prices.module.css';
+import PropTypes from 'prop-types';
 
 const { priceLowBefore, priceLowAfter, priceMiddle, priceHigh } = dates;
 const currentPrice = dates => {
@@ -53,10 +54,18 @@ const Table = ({ roomType, rooms }) => {
                 {room.title} <p> {room.persons}-місний</p>
               </NavLink>
             </td>
-            <td className={currentPrice(priceLowBefore) ? css.current : ''}>{room.priceLow}</td>
-            <td className={currentPrice(priceMiddle) ? css.current : ''}>{room.priceMiddle}</td>
-            <td className={currentPrice(priceHigh) ? css.current : ''}>{room.priceHigh}</td>
-            <td className={currentPrice(priceLowAfter) ? css.current : ''}>{room.priceLow}</td>
+            <td className={currentPrice(priceLowBefore) ? css.current : ''}>
+              {room.priceLow}
+            </td>
+            <td className={currentPrice(priceMiddle) ? css.current : ''}>
+              {room.priceMiddle}
+            </td>
+            <td className={currentPrice(priceHigh) ? css.current : ''}>
+              {room.priceHigh}
+            </td>
+            <td className={currentPrice(priceLowAfter) ? css.current : ''}>
+              {room.priceLow}
+            </td>
           </tr>
         </tbody>
       ))}
@@ -64,3 +73,21 @@ const Table = ({ roomType, rooms }) => {
   );
 };
 export default Table;
+
+Table.propTypes = {
+  rooms: PropTypes.PropTypes.shape(
+    {
+      [PropTypes.string.isRequired]: PropTypes.arrayOf(
+        PropTypes.PropTypes.shape({
+          id: PropTypes.string.isRequired,
+          title: PropTypes.string.isRequired,
+          persons: PropTypes.number.isRequired,
+          priceHigh: PropTypes.number.isRequired,
+          priceLow: PropTypes.number.isRequired,
+          priceMiddle: PropTypes.number.isRequired,
+        }).isRequired
+      ).isRequired,
+    }.isRequired
+  ).isRequired,
+  roomType: PropTypes.string.isRequired,
+};

@@ -1,5 +1,6 @@
 import css from './Navigation.module.css';
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const MobileNavigation = ({ mobileHidden, updateMobileHidden }) => {
   return (
@@ -62,3 +63,8 @@ const MobileNavigation = ({ mobileHidden, updateMobileHidden }) => {
   );
 };
 export default MobileNavigation;
+
+MobileNavigation.propTypes = {
+  mobileHidden: PropTypes.bool.isRequired,
+  updateMobileHidden: PropTypes.func.isRequired,
+};

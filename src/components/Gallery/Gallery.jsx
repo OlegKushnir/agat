@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Lightbox from 'react-spring-lightbox';
 import app from '../App.module.css';
+import PropTypes from 'prop-types';
+
 
 const CoolLightbox = ({ links, currentImage, handleClick }) => {
   const images = [];
@@ -87,3 +89,9 @@ const CoolLightbox = ({ links, currentImage, handleClick }) => {
 };
 
 export default CoolLightbox;
+
+CoolLightbox.propTypes = {
+  links: PropTypes.arrayOf(PropTypes.string).isRequired,
+  currentImage: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
+};

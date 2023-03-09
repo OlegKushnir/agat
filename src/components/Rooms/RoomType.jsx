@@ -2,6 +2,8 @@ import app from '../App.module.css';
 import css from './Rooms.module.css';
 import { NavLink } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
+import PropTypes from 'prop-types';
+
 
 const RoomType = ({ type, descr, image }) => {
 
@@ -32,3 +34,9 @@ const RoomType = ({ type, descr, image }) => {
   );
 };
 export default RoomType;
+
+RoomType.propTypes = {
+  type: PropTypes.string.isRequired,
+  descr: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+};
