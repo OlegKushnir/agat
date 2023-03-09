@@ -12,7 +12,10 @@ import { useState } from 'react';
 const Layout = () => {
   const { pathname } = useLocation();
   const [mobileHidden, updateMobileHidden] = useState(true);
-
+  useLayoutEffect(() => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }, []);
   useLayoutEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [pathname]);
@@ -44,10 +47,10 @@ const Layout = () => {
               )}
             </button>
             <Navigation />
-              <MobileNavigation
-                mobileHidden={mobileHidden}
-                updateMobileHidden={updateMobileHidden}
-              />
+            <MobileNavigation
+              mobileHidden={mobileHidden}
+              updateMobileHidden={updateMobileHidden}
+            />
           </div>
         </div>
       </header>

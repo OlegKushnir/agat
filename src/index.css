@@ -8,6 +8,7 @@
   --cubik:cubic-bezier(0.4, 0, 0.2, 1);
   --desctop: 1280px;
   --tablet: 748px;
+  --mobile: 480px;
 }
 html,body {
   height: 100%;
