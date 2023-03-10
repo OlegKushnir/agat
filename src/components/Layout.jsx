@@ -27,7 +27,7 @@ const Layout = () => {
           <div className={css.wrapper}>
             <div className={app.logo__thumb}>
               <NavLink to="/" className={css.navLink}>
-                <span className={app.logo}>Енергетик</span>
+                <span className={app.logo}>Hotel</span>
               </NavLink>
             </div>
 

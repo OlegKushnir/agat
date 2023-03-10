@@ -1,232 +1,77 @@
 [
     {
         "id": "1",
-        "type": "Напівлюкс",
-        "title": "Напівлюкс",
+        "type": "Standart",
+        "title": "Standart Room",
         "persons": 2,
-        "priceLow": 450,
-        "priceMiddle": 750,
-        "priceHigh": 1000,
+        "priceLow": 100,
+        "priceMiddle": 150,
+        "priceHigh": 200,
         "filling":[1,2,3,4,5,6,7],
         "images": [
-            "k1.jpg",
-            "k2.jpg",
-            "k3.jpg",
-            "k4.jpg"
+            "f41.jpg",
+            "f41.jpg",
+            "f41.jpg"
         ]
     },
     {
         "id": "2",
-        "type": "Напівлюкс",
-        "title": "Напівлюкс (додаткове ліжко)",
+        "type": "Standart",
+        "title": "Standart Room",
         "persons": 3,
-        "priceLow": 600,
-        "priceMiddle": 900,
-        "priceHigh": 1400,
+        "priceLow": 150,
+        "priceMiddle": 200,
+        "priceHigh": 250,
         "filling":[1,2,3,4,5,6,7],
         "images": [
-            "k2.jpg",
-            "k5.jpg",
-            "k3.jpg",
-            "k4.jpg"
+            "f41.jpg",
+            "f41.jpg",
+            "f41.jpg"
         ]
     },
     {
         "id": "3",
-        "type": "Напівлюкс",
-        "title": "Напівлюкс (мансардний)",
+        "type": "Double",
+        "title": "Double room",
         "persons": 2,
-        "priceLow": 450,
-        "priceMiddle": 700,
-        "priceHigh": 950,
+        "priceLow": 100,
+        "priceMiddle": 150,
+        "priceHigh": 200,
         "filling":[1,2,3,5,6,7],
         "images": [
-            "k8.jpg",
-            "k9.jpg",
-            "k10.jpg",
-            "k11.jpg",
-            "k12.jpg"
+            "f41.jpg",
+            "f41.jpg",
+            "f41.jpg"
         ]
     },
     {
         "id": "4",
-        "type": "Напівлюкс",
-        "title": "Двомісний",
+        "type": "Lux",
+        "title": "Lux room",
         "persons": 2,
-        "priceLow": 450,
-        "priceMiddle": 600,
-        "priceHigh": 800,
-        "filling":[1,2,3,7],
+        "priceLow": 200,
+        "priceMiddle": 300,
+        "priceHigh": 400,
+        "filling":[1,2,3,4,5,6,8,7],
         "images": [
-            "k6.jpg",
-            "k7.jpg",
-            "k4.jpg"
+            "f41.jpg",
+            "f41.jpg",
+            "f41.jpg"
         ]
     },
     {
         "id": "5",
-        "type": "Сімейний",
-        "title": "Сімейний",
-        "persons": 4,
-        "priceLow": 800,
-        "priceMiddle": 1200,
-        "priceHigh": 1650,
-        "filling":[1,8,2,3,4,5,6],
+        "type": "Lux",
+        "title": "Lux room",
+        "persons": 3,
+        "priceLow": 300,
+        "priceMiddle": 400,
+        "priceHigh": 500,
+        "filling":[1,2,3,4,5,6,8,7],
         "images": [
             "f41.jpg",
-            "f42.jpg",
-            "f43.jpg",
-            "f44.jpg",
-            "f45.jpg",
-            "f46.jpg"
-        ]
-    },
-    {
-        "id": "6",
-        "type": "Сімейний",
-        "title": "Сімейний",
-        "persons": 3,
-        "priceLow": 700,
-        "priceMiddle": 1000,
-        "priceHigh": 1400,
-        "filling":[1,8,2,3,4,5,6],
-        "images": [
             "f41.jpg",
-            "f42.jpg",
-            "f43.jpg",
-            "f44.jpg",
-            "f45.jpg",
-            "f46.jpg"
-        ]
-    },
-    {
-        "id": "7",
-        "type": "Сімейний",
-        "title": "Сімейний окремий",
-        "persons": 2,
-        "priceLow": 540,
-        "priceMiddle": 750,
-        "priceHigh": 1000,
-        "filling":[1,8,2,3,5,6],
-        "images": [
-            "fd.jpg",
-            "fd1.jpg",
-            "fd2.jpg",
-            "fd3.jpg"
-        ]
-    },
-    {
-        "id": "8",
-        "type": "Комфорт",
-        "title": "Комфорт двомісний",
-        "persons": 2,
-        "priceLow": 550,
-        "priceMiddle": 750,
-        "priceHigh": 1000,
-        "filling":[1,2,3,4,5,6],
-        "images": [
-            "b.jpg",
-            "b1.jpg",
-            "b12.jpg",
-            "b13.jpg"
-        ]
-    },
-    {
-        "id": "9",
-        "type": "Комфорт",
-        "title": "Комфорт чотиримісний",
-        "persons": 4,
-        "priceLow": 900,
-        "priceMiddle": 1350,
-        "priceHigh": 1850,
-        "filling":[1,2,3,4,5,6],
-        "images": [
-            "b.jpg",
-            "b61.jpg",
-            "b62.jpg",
-            "b63.jpg",
-            "b64.jpg",
-            "b65.jpg",
-            "b66.jpg",
-            "b67.jpg",
-            "b620.jpg",
-            "a61.jpg",
-            "a62.jpg",
-            "a63.jpg",
-            "a64.jpg",
-            "a65.jpg",
-            "a66.jpg"
-        ]
-    },
-    {
-        "id": "10",
-        "type": "Економ",
-        "title": "Економ сімейний",
-        "persons": 3,
-        "priceLow": 540,
-        "priceMiddle": 750,
-        "priceHigh": 1000,
-        "filling":[2,3,4,5,6],
-        "images": [
-            "e1.jpg",
-            "e2.jpg",
-            "e5.jpg",
-            "e7.jpg",
-            "e9.jpg",
-            "e10.jpg"
-        ]
-    },
-    {
-        "id": "11",
-        "type": "Економ",
-        "title": "Економ сімейний",
-        "persons": 3,
-        "priceLow": 480,
-        "priceMiddle": 650,
-        "priceHigh": 950,
-        "filling":[2,3,5,6],
-        "images": [
-            "e1.jpg",
-            "e2.jpg",
-            "e5.jpg",
-            "e7.jpg",
-            "e9.jpg",
-            "e10.jpg"
-        ]
-    },
-    {
-        "id": "12",
-        "type": "Економ",
-        "title": "Економ сімейний",
-        "persons": 3,
-        "priceLow": 480,
-        "priceMiddle": 600,
-        "priceHigh": 850,
-        "filling":[2,3,5],
-        "images": [
-            "e1.jpg",
-            "e2.jpg",
-            "e5.jpg",
-            "e7.jpg",
-            "e9.jpg",
-            "e10.jpg"
-        ]
-    },
-    {
-        "id": "13",
-        "type": "Стандарт",
-        "title": " Стандарт",
-        "persons": 3,
-        "priceLow": 700,
-        "priceMiddle": 1000,
-        "priceHigh": 1400,
-        "filling":[1,2,3,4,5,6],
-        "images": [
-            "vit1.jpg",
-            "vit2.jpg",
-            "vit3.jpg",
-            "vit4.jpg",
-            "vit5.jpg"
+            "f41.jpg"
         ]
     }
 

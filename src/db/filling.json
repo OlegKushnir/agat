@@ -1,27 +1,27 @@
 [
     {
         "id": 1,
-        "title": "двоспальне ліжко",
+        "title": "king size bed",
         "iconURL": "../icons.svg#bed3"
     },{
         "id": 2,
-        "title": "душ",
+        "title": "bath",
         "iconURL": "../icons.svg#bath"
     },{
         "id": 3,
-        "title": "туалет",
+        "title": "toilet",
         "iconURL": "../icons.svg#toilet"
     },{
         "id": 4,
-        "title": "телевізор",
+        "title": "TV",
         "iconURL": "../icons.svg#tv"
     },{
         "id": 5,
-        "title": "холодильник",
+        "title": "fridge",
         "iconURL": "../icons.svg#fridge"
     },{
         "id": 6,
-        "title": "кондиціонер",
+        "title": "conditioning",
         "iconURL": "../icons.svg#ac"
     },{
         "id": 7,
@@ -29,7 +29,7 @@
         "iconURL": "../icons.svg#wifi"
     },{
         "id": 8,
-        "title": "диван",
+        "title": "sofa",
         "iconURL": "../icons.svg#sofa"
     }
 ]

@@ -16,7 +16,7 @@ const MobileNavigation = ({ mobileHidden, updateMobileHidden }) => {
             className={css.navLink}
             onClick={() => updateMobileHidden(!mobileHidden)}
           >
-            Головна
+            Home
           </NavLink>
         </li>
         <li className={css.mobile__item}>
@@ -25,7 +25,7 @@ const MobileNavigation = ({ mobileHidden, updateMobileHidden }) => {
             className={css.navLink}
             onClick={() => updateMobileHidden(!mobileHidden)}
           >
-            Номери
+            Rooms
           </NavLink>
         </li>
         <li className={css.mobile__item}>
@@ -34,7 +34,7 @@ const MobileNavigation = ({ mobileHidden, updateMobileHidden }) => {
             className={css.navLink}
             onClick={() => updateMobileHidden(!mobileHidden)}
           >
-            Ціни
+            Prices
           </NavLink>
         </li>
         <li className={css.mobile__item}>
@@ -43,7 +43,7 @@ const MobileNavigation = ({ mobileHidden, updateMobileHidden }) => {
             className={css.navLink}
             onClick={() => updateMobileHidden(!mobileHidden)}
           >
-            Карта
+            Location
           </NavLink>
         </li>
         <li className={css.mobile__item}>
@@ -52,12 +52,12 @@ const MobileNavigation = ({ mobileHidden, updateMobileHidden }) => {
             className={css.navLink}
             onClick={() => updateMobileHidden(!mobileHidden)}
           >
-            Контакти
+            Contacts
           </NavLink>
         </li>
       </ul>
-      <a href="tel:+380677085568" className={css.booking}>
-        Забронювати номер
+      <a href="tel:+381111111111" className={css.booking}>
+        Book Now
       </a>
     </div>
   );

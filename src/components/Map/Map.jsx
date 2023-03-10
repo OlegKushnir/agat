@@ -3,13 +3,14 @@ import app from '../App.module.css';
 const Map = () => {
   return (
     <section className={app.wrapper}>
-      <h2 className={app.section__title}>Як нас знайти</h2>
+      <h2 className={app.section__title}>Our location</h2>
       <div className={app.wrapper}>
-        <iframe
+      <iframe
           className={app.map}
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2739.9273150320287!2d31.17733991550444!3d46.6281980630412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c66adf95ed7f39%3A0x9e5b87c21e66c3b8!2z0JXQvdC10YDQs9C10YLQuNC6!5e0!3m2!1suk!2s!4v1676645330052!5m2!1suk!2s"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5007220.739102379!2d27.28874321123379!3d49.175885164068106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6318a0b864c43%3A0x129f8fe28cf2176c!2z0J7QtNC10YHQsCwg0J7QtNC10YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0ZfQvdCwLCA2NTAwMA!5e0!3m2!1suk!2s!4v1678446505875!5m2!1suk!2s"
           title="googleMap"
           loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </section>

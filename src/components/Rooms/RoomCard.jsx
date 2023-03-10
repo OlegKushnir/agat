@@ -38,20 +38,20 @@ const RoomCard = ({
         <div className={app.infoWrapper}>
           <h3 className={app.title}>
             {title}
-            <p className={app.thinText}> {persons} - місний</p>
+            <p className={app.thinText}> {persons} - pessons</p>
           </h3>
           <ul className={css.prices}>
             <li className={app.text}>
-              {seasonDAtes.priceLowBefore} : {priceLow} грн
+              {seasonDAtes.priceLowBefore} : {priceLow} USD
             </li>
             <li className={app.text}>
-              {seasonDAtes.priceMiddle} : {priceMiddle} грн
+              {seasonDAtes.priceMiddle} : {priceMiddle} USD
             </li>
             <li className={app.text}>
-              {seasonDAtes.priceHigh} : {priceHigh} грн
+              {seasonDAtes.priceHigh} : {priceHigh} USD
             </li>
             <li className={app.text}>
-              {seasonDAtes.priceLowAfter} : {priceLow} грн
+              {seasonDAtes.priceLowAfter} : {priceLow} USD
             </li>
           </ul>
 

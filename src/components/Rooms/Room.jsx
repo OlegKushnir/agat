@@ -48,7 +48,7 @@ const Room = () => {
         <p className={app.text}>{descr}</p>
       </div>
 
-      <p className={app.title}> Комплектація номера:</p>
+      <p className={app.title}> Room Feature:</p>
       <div className={css.thumb}>
         <ul className={app.filling}>
           {fillingFull.map(({ id, title, iconURL }) => (

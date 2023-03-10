@@ -17,7 +17,7 @@ const Home = () => {
           }
           ref={ref}
         >
-          Енергетик<span className={app.hero__sublogo}>база відпочинку</span>
+          Hotel<span className={app.hero__sublogo}>the best</span>
         </h2>
       </div>
       <div className={app.container}>

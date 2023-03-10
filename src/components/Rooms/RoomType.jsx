@@ -17,7 +17,7 @@ const RoomType = ({ type, descr, image }) => {
         <div className={app.imgWrapper}>
           <img
             className={app.roomImg}
-            src={`${image?.split('.')[0]}_480.jpg`}
+            src={`/agat/${image?.split('.')[0]}_480.jpg`}
             width="320"
             height="240"
             alt={type}

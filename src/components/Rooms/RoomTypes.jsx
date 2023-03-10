@@ -9,7 +9,7 @@ const RoomTypes = () => {
   }
   return (
     <section className={app.wrapper}>
-      <h2 className={app.section__title}>Наші номери</h2>
+      <h2 className={app.section__title}>Our rooms</h2>
       <div className={app.wrapper}>
       <ul className={app.list}>
         {roomTypes.map(({ id, type, descr, image }) => (

@@ -11,7 +11,7 @@ window.addEventListener('resize', () => {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/agat/">
       <App />
     </BrowserRouter>
   </React.StrictMode>

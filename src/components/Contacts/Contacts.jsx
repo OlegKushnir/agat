@@ -14,10 +14,8 @@ const Contacts = () => {
                 </svg>
               </NavLink>
               <div>
-                <h2 className={app.title}>Місцезнаходження</h2>
-                <p className={app.text}>
-                  55км дороги Одеса-Мелітополь-Новоазовськ, 10
-                </p>
+                <h2 className={app.title}>Location</h2>
+                <p className={app.text}>Hotel location</p>
               </div>
             </li>
             <li className={app.contacts__item}>
@@ -27,9 +25,9 @@ const Contacts = () => {
                 </svg>
               </span>
               <div>
-                <h2 className={app.title}>Часи роботи</h2>
-                <p className={app.text}>Понеділок - П'ятниця: 09:00 - 18:00</p>
-                <p className={app.text}>Суббота: 10:00 - 14:00</p>
+                <h2 className={app.title}>Working Hours</h2>
+                <p className={app.text}>Monday to Friday 08:00 to 18:00</p>
+                <p className={app.text}>Saturday: 10:00 - 14:00</p>
               </div>
             </li>
             <li className={app.contacts__item}>
@@ -43,13 +41,13 @@ const Contacts = () => {
                 </svg>
               </a>
               <div>
-                <h2 className={app.title}>Написати нам</h2>
-                <p className={app.text}>agat.turism@gmail.com</p>
+                <h2 className={app.title}>Message Us</h2>
+                <p className={app.text}>email@gmail.com</p>
               </div>
             </li>
             <li className={app.contacts__item}>
               <a
-                href="tel:+380682840591"
+                href="tel:+3801111111111"
                 className={app.contacts__link}
                 title="phone"
               >
@@ -58,23 +56,24 @@ const Contacts = () => {
                 </svg>
               </a>
               <div>
-                <h2 className={app.title}>Забронювати номер</h2>
-                <p className={app.text}>(+38) 068 284 05 91</p>
+                <h2 className={app.title}>Book Now</h2>
+                <p className={app.text}>(+38) 111 111 11 11</p>
               </div>
             </li>
           </ul>
           <div className={app.contacts}>
             <article className={app.text}>
-              <p >
-                База відпочинку "Енергетик" знаходиться на узбережжі Чорного
-                моря в курортній зоні Коблеве на кордоні Одеської та
-                Миколаївської областей. Розташована в першій ліннії від моря, має
-                свій вихід на пляж.
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Possimus, voluptas quo eveniet, repellat accusantium reiciendis
+                ad facere alias recusandae incidunt rem consequuntur, laboriosam
+                ipsam? Itaque error dolorum repudiandae magni quos.
               </p>
               <p>
-                Бронювання номерів відбувається за передплатою (30% від
-                загальної вартості). Бронювання дійсне після надходження
-                передплати. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+                quo nam. Aspernatur, incidunt reprehenderit? Ratione, modi
+                ipsam. Veniam harum voluptas eos ducimus, consequuntur eum at
+                unde similique nesciunt. Excepturi, itaque.
               </p>
             </article>
           </div>

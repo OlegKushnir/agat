@@ -7,27 +7,27 @@ const Navigation = () => {
       <ul className={css.thumb}>
         <li className={css.item}>
           <NavLink to="/" className={css.navLink}>
-            Головна
+            Home
           </NavLink>
         </li>
         <li className={css.item}>
           <NavLink to="/rooms" className={css.navLink}>
-            Номери
+            Rooms
           </NavLink>
         </li>
         <li className={css.item}>
           <NavLink to="/prices" className={css.navLink}>
-            Ціни
+            Prices
           </NavLink>
         </li>
         <li className={css.item}>
           <NavLink to="/map" className={css.navLink}>
-            Карта
+            Location
           </NavLink>
         </li>
         <li className={css.item}>
           <NavLink to="/contacts" className={css.navLink}>
-            Контакти
+            Contacts
           </NavLink>
         </li>
       </ul>

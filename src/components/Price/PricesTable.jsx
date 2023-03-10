@@ -24,21 +24,21 @@ const Table = ({ roomType, rooms }) => {
       <caption className={app.title}>{roomType}</caption>
       <thead>
         <tr>
-          <td className={app.table__title}>Тип номера</td>
+          <td className={app.table__title}>Room type</td>
           <td className={app.table__title}>
-            Ціна
+            Price
             <p>{priceLowBefore}</p>
           </td>
           <td className={app.table__title}>
-            Ціна
+            Price
             <p>{priceMiddle}</p>
           </td>
           <td className={app.table__title}>
-            Ціна
+            Price
             <p>{priceHigh}</p>
           </td>
           <td className={app.table__title}>
-            Ціна
+            Price
             <p>{priceLowAfter}</p>
           </td>
         </tr>
@@ -51,7 +51,7 @@ const Table = ({ roomType, rooms }) => {
                 to={`/rooms/${roomType}/${room.id}`}
                 className={css.link}
               >
-                {room.title} <p> {room.persons}-місний</p>
+                {room.title} <p> {room.persons}- persons</p>
               </NavLink>
             </td>
             <td className={currentPrice(priceLowBefore) ? css.current : ''}>

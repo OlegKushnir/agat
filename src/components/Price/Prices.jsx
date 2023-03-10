@@ -21,29 +21,31 @@ const Prices = () => {
   return (
     <div className={app.wrapper}>
       <p className={app.text}>
-        Вартість прибування залежить від дат поселення. Ціна вказана за номер за
-        ніч при поселенні на період від трьох ночей. Вказана максимальна
-        кількість осіб для розташування.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad soluta ab,
+        itaque error inventore adipisci omnis ea rem expedita repellendus? Animi
+        itaque blanditiis, incidunt sunt accusamus iure? Temporibus, minus
+        obcaecati?
         <span className={css.textImp}>
-          Поселення в номер після 13:00 / Виселення з номера до 10:00
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam
+          adipisci minus, autem, consectetur ipsa nihil ab vitae laudantium
+          quasi aliquid aspernatur animi rerum, nobis ut ducimus a provident
+          commodi.
         </span>
-        Бронювання здійснюється за передплатою (30% від загальної вартості).
-        Бронювання дійсне після надходження передплати. Для отримання додаткової
-        інформації та фото оберіть (натисніть) бажаний тип номера. Клієнтам
-        надається безкоштовна парковка!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, aut
+        iusto ab recusandae sed error repellat voluptatem cumque voluptatibus,
+        repellendus, harum accusantium incidunt minus adipisci qui ipsam sequi
+        quia minima.
       </p>
       <span className={css.textImp}></span>
       <p>
-        <span className={css.current}>xxx</span> - актуальна ціна на поточну
-        добу
+        <span className={css.current}>xxx</span> - price for today
       </p>
-      
-        {Object.keys(roomTypes).map(rType => (
-          <div  key={rType} className={app.wrapper}>
+
+      {Object.keys(roomTypes).map(rType => (
+        <div key={rType} className={app.wrapper}>
           <Table roomType={rType} rooms={roomTypes} />
-          </div>
-        ))}
-      
+        </div>
+      ))}
     </div>
   );
 };
